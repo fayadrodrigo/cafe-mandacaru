@@ -1,0 +1,14 @@
+:root{
+--font-display:"Bevan","Rockwell Extra Bold",Georgia,serif;
+--font-body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+--font-script:"Caveat","Segoe Print",cursive;
+/* Display scale (Bevan) — used tight, uppercase, letter-spaced for headings */
+--text-display-xl:clamp(56px,8vw,112px);--text-display-lg:clamp(40px,5vw,64px);--text-display-md:32px;--text-display-sm:22px;--text-display-xs:16px;
+--leading-display:.95;--tracking-display:.02em;--tracking-caps:.14em;
+/* Body scale (Instrument Sans) */
+--text-lg:19px;--text-md:16px;--text-sm:14px;--text-xs:12px;--text-2xs:11px;
+--leading-body:1.5;--leading-tight:1.25;
+/* Script (Caveat) — notes, asides, "+R$3" callouts */
+--text-script-lg:32px;--text-script-md:24px;--text-script-sm:18px;
+--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;
+}

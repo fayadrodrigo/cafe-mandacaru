@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/caf-mandacaru-design-system-977c1f01-2a55-4fa1-8b1e-9db9a967708c/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/caf-mandacaru-design-system-977c1f01-2a55-4fa1-8b1e-9db9a967708c/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/caf-mandacaru-design-system-977c1f01-2a55-4fa1-8b1e-9db9a967708c/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/caf-mandacaru-design-system-977c1f01-2a55-4fa1-8b1e-9db9a967708c/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/caf-mandacaru-design-system-977c1f01-2a55-4fa1-8b1e-9db9a967708c/tokens/base.css">
+  <link rel="stylesheet" href="_ds/caf-mandacaru-design-system-977c1f01-2a55-4fa1-8b1e-9db9a967708c/styles.css">
+  <script src="_ds/caf-mandacaru-design-system-977c1f01-2a55-4fa1-8b1e-9db9a967708c/_ds_bundle.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{background:var(--areia-200)}
+    a{color:var(--cacto-800);text-decoration-color:var(--ouro-600)}
+    a:hover{color:var(--hibisco-600)}
+  </style>
+</helmet>
+<div class="cm-grain" style="max-width:480px;margin:0 auto;min-height:100vh;background:var(--surface-page);color:var(--text-body);font-family:var(--font-body);display:flex;flex-direction:column;position:relative">
+  <header style="padding:24px 20px 8px;text-align:center;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:6px">
+    <img src="assets/hibiscus.png" alt="" style="position:absolute;width:170px;right:-70px;top:-50px">
+    <img src="assets/banana-leaf.png" alt="" style="position:absolute;width:220px;left:-120px;top:-60px;transform:rotate(120deg);opacity:.9">
+    <img src="assets/symbol.png" alt="" style="height:84px;position:relative">
+    <img src="assets/wordmark.png" alt="Café Mandacaru" style="width:210px;position:relative">
+    <div class="cm-caps" style="color:var(--text-muted);position:relative">Boipeba · Bahia</div>
+  </header>
+
+  <div style="position:sticky;top:0;z-index:2;background:var(--surface-page);padding:8px 20px 0;box-shadow:0 2px 0 var(--surface-page)">
+    <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.Tabs" items="{{ tabs }}" value="{{ tab }}" on-change="{{ setTab }}" hint-size="100%,44px"></x-import>
+  </div>
+
+  <main style="padding:20px 20px 48px;display:flex;flex-direction:column;gap:32px;position:relative">
+    <sc-if value="{{ isComer }}" hint-placeholder-val="{{ true }}">
+      <figure style="margin:0;aspect-ratio:4/3;border:2px solid var(--border-ink);box-shadow:var(--shadow-hard);overflow:hidden;position:relative;background:var(--surface-card)">
+        <img src="assets/foto-cuscuz.png" alt="Cuscuz Sertão" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%">
+      </figure>
+      <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuSection" title="Cuscuz do Mandacaru" intro="mais 3 reais e seu cuscuz com leite de coco" align="left" gap="{{ 10 }}" hint-size="100%,280px">
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Cuscuz com Ovo" price="18" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Cuscuz com Banana-da-Terra" price="21" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Cuscuz com Caponata" price="24" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Cuscuz com Carne Seca" price="29" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Cuscuz com Queijo Coalho" price="29" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Cuscuz Sertão" price="34" description="Carne seca + queijo coalho" hint-size="100%,44px"></x-import>
+      </x-import>
+      <figure style="margin:0;aspect-ratio:3/2;border:2px solid var(--border-ink);box-shadow:var(--shadow-hard);overflow:hidden;position:relative;background:var(--cacau-900)">
+        <img src="assets/foto-trio.png" alt="Trio Primavera" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.3)">
+      </figure>
+      <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuSection" title="Panqueca Primavera" align="left" gap="{{ 10 }}" hint-size="100%,160px">
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Trio Primavera" price="27" description="Caponata de berinjela + ovo" hint-size="100%,44px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Trio Primavera Sertão" price="34" description="Caponata de berinjela + carne seca" hint-size="100%,44px"></x-import>
+      </x-import>
+      <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuSection" title="Trio de Panqueca Doce" align="left" gap="{{ 10 }}" hint-size="100%,110px">
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Trio de Panqueca Doce" price="19" description="Com geleia ou melado de cana" hint-size="100%,44px"></x-import>
+      </x-import>
+      <figure style="margin:0;aspect-ratio:4/3;border:2px solid var(--border-ink);box-shadow:var(--shadow-hard);overflow:hidden;position:relative;background:var(--surface-card)">
+        <img src="assets/foto-doce.png" alt="Trio de Panqueca Doce e bruschetta de caponata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%">
+      </figure>
+      <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuSection" title="Quiche de Grão-de-Bico" align="left" gap="{{ 10 }}" hint-size="100%,90px">
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Quiche de Grão-de-Bico com PANCs" price="17" hint-size="100%,24px"></x-import>
+      </x-import>
+      <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuSection" title="Bruschettas" align="left" gap="{{ 10 }}" hint-size="100%,120px">
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Tomate Confit" price="24" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Caponata de Berinjela" price="24" hint-size="100%,24px"></x-import>
+      </x-import>
+      <figure style="margin:0;aspect-ratio:4/3;border:2px solid var(--border-ink);box-shadow:var(--shadow-hard);overflow:hidden;position:relative;background:var(--surface-card)">
+        <img src="assets/foto-bruschetta-bolo.png" alt="Bruschetta de caponata e Bolo do Dia" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%">
+      </figure>
+      <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuSection" title="Bowl" align="left" gap="{{ 10 }}" hint-size="100%,90px">
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Bowl de Frutas com Granola" price="17" hint-size="100%,24px"></x-import>
+      </x-import>
+      <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuSection" title="Bolo" align="left" gap="{{ 10 }}" hint-size="100%,90px">
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Bolo do Dia" price="10" hint-size="100%,24px"></x-import>
+      </x-import>
+    </sc-if>
+
+    <sc-if value="{{ isBeber }}" hint-placeholder-val="{{ false }}">
+      <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuSection" title="Bebidas" align="left" gap="{{ 12 }}" hint-size="100%,300px">
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Café" price="9" size="lg" hint-size="100%,28px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Café com Leite de Coco" price="14" description="Pingado" size="lg" hint-size="100%,48px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Água de Coco" price="10" size="lg" hint-size="100%,28px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Suco de Polpa" price="14" size="lg" hint-size="100%,28px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Suco Verde" price="17" size="lg" hint-size="100%,28px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Chocolate Quente" price="18" description="Com leite de coco" size="lg" hint-size="100%,48px"></x-import>
+      </x-import>
+      <p class="cm-script" style="color:var(--text-accent);font-size:24px">tudo com leite de coco, sem leite de vaca</p>
+    </sc-if>
+
+    <sc-if value="{{ isExtras }}" hint-placeholder-val="{{ false }}">
+      <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuSection" title="Adicionais" intro="pra completar seu prato" align="left" gap="{{ 10 }}" hint-size="100%,320px">
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Queijo Coalho" price="7" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Banana-da-Terra" price="7" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Caponata de Berinjela" price="8" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Ovo" price="5" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Carne Seca" price="9" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Granola Doce ou Salgada" price="5" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Geleia" price="4" hint-size="100%,24px"></x-import>
+        <x-import component-from-global-scope="CafMandacaruDesignSystem_977c1f.MenuItem" name="Melado de Cana" price="4" hint-size="100%,24px"></x-import>
+      </x-import>
+      <p class="cm-script" style="color:var(--text-accent);font-size:24px">+ R$ 3 e seu cuscuz vem com leite de coco</p>
+    </sc-if>
+  </main>
+
+  <footer style="margin-top:auto;padding:28px 20px 40px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+    <img src="assets/mandacaru-flower.png" alt="" style="position:absolute;width:260px;right:-120px;bottom:-110px">
+    <div class="cm-orn" style="width:100%;position:relative">···</div>
+    <p class="cm-script" style="color:var(--text-accent);font-size:24px;position:relative;margin-top:8px">gostou? segue a gente lá</p>
+    <a href="https://www.instagram.com/cafemandacaru_bp/" target="_blank" rel="noopener" style="position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;background:var(--action-primary);color:var(--action-primary-text);border:2px solid var(--border-ink);border-radius:2px;box-shadow:var(--shadow-hard);font-weight:600;font-size:var(--text-md);text-decoration:none;line-height:1.2" style-hover="background:var(--action-primary-hover);box-shadow:var(--shadow-hard-sm);transform:translate(2px,2px);color:var(--action-primary-text)" style-active="box-shadow:none;transform:translate(4px,4px)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
+      Seguir @cafemandacaru_bp
+    </a>
+    <div class="cm-caps" style="color:var(--text-muted);line-height:1.9;position:relative;margin-top:8px">Boipeba · Bahia</div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844}}">
+class Component extends DCLogic {
+  state = { tab: "comer" };
+  componentDidMount() {
+    const t = localStorage.getItem("cm-cardapio-tab");
+    if (t) this.setState({ tab: t });
+  }
+  renderVals() {
+    const tab = this.state.tab;
+    return {
+      tab,
+      tabs: [{ label: "Comer", value: "comer" }, { label: "Beber", value: "beber" }, { label: "Extras", value: "extras" }],
+      setTab: (v) => { localStorage.setItem("cm-cardapio-tab", v); this.setState({ tab: v }); window.scrollTo(0, 0); },
+      isComer: tab === "comer",
+      isBeber: tab === "beber",
+      isExtras: tab === "extras",
+    };
+  }
+}
+</script>
+</body>
+</html>

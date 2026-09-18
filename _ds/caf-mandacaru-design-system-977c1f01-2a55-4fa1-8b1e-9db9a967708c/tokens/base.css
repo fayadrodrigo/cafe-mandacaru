@@ -1,0 +1,13 @@
+/* Minimal resets & helper classes. Components use tokens directly; these are for pages/cards. */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font-family:var(--font-body);font-size:var(--text-md);line-height:var(--leading-body);-webkit-font-smoothing:antialiased}
+a{color:var(--text-link);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--ouro-600)}
+a:hover{color:var(--text-accent);text-decoration-color:currentColor}
+h1,h2,h3,h4{margin:0;font-family:var(--font-display);font-weight:400;line-height:var(--leading-display);letter-spacing:var(--tracking-display);color:var(--text-heading);text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.cm-grain{position:relative}
+.cm-grain::after{content:"";position:absolute;inset:0;background-image:var(--grain);pointer-events:none;mix-blend-mode:multiply;opacity:.7}
+.cm-caps{font-family:var(--font-body);font-weight:var(--weight-semibold);font-size:var(--text-xs);letter-spacing:var(--tracking-caps);text-transform:uppercase}
+.cm-script{font-family:var(--font-script);font-weight:500;font-size:var(--text-script-md);line-height:1.1}
+.cm-orn{display:flex;align-items:center;gap:var(--space-3);color:var(--ouro-600);font-family:var(--font-body);font-size:var(--text-sm);letter-spacing:.35em}
+.cm-orn::before,.cm-orn::after{content:"";flex:1;height:0;border-top:2px solid currentColor}

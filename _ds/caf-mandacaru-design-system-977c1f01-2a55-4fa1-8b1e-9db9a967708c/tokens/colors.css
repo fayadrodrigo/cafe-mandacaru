@@ -1,0 +1,31 @@
+:root{
+/* Base palette — pulled from the logo and the three botanical assets */
+--cacau-900:#22100A;--cacau-800:#3B1D0E;--cacau-700:#5A2E17;--cacau-600:#7A4526;
+--ouro-700:#8A6218;--ouro-600:#B8862B;--ouro-500:#D2A544;--ouro-300:#E9CF8A;
+--cacto-900:#1F3A2A;--cacto-800:#2F4A22;--cacto-700:#4F6B2F;--cacto-500:#7A9A47;--cacto-300:#B7C98A;
+--hibisco-700:#A8161C;--hibisco-600:#D8262B;--hibisco-400:#E8636A;--hibisco-200:#F6C7C9;
+--flor-100:#FBF6EA;--flor-200:#F6EFDD;
+--areia-100:#F3E7CF;--areia-200:#E9D9B5;--areia-300:#D9C39A;--areia-400:#BFA275;
+--pedra-500:#A67C52;--pedra-700:#7C5A3A;
+--coco-0:#FFFFFF;
+/* Semantic — light (paper) theme */
+--surface-page:var(--areia-100);--surface-card:var(--flor-100);--surface-raised:var(--coco-0);--surface-inverse:var(--cacau-900);--surface-accent:var(--cacto-900);--surface-tint:var(--areia-200);
+--text-body:var(--cacau-800);--text-muted:var(--pedra-700);--text-heading:var(--cacau-900);--text-inverse:var(--flor-200);--text-accent:var(--hibisco-600);--text-link:var(--cacto-800);--text-price:var(--cacau-900);
+--border-ink:var(--cacau-800);--border-soft:var(--areia-300);--border-gold:var(--ouro-600);
+--action-primary:var(--cacau-800);--action-primary-hover:var(--cacau-700);--action-primary-text:var(--flor-200);
+--action-accent:var(--hibisco-600);--action-accent-hover:var(--hibisco-700);--action-accent-text:var(--flor-100);
+--action-secondary:transparent;--action-secondary-text:var(--cacau-800);
+--action-green:var(--cacto-700);--action-green-hover:var(--cacto-800);
+--focus-ring:var(--ouro-600);
+--status-success:var(--cacto-700);--status-warning:var(--ouro-600);--status-danger:var(--hibisco-600);--status-info:var(--pedra-500);
+--shadow-hard:4px 4px 0 var(--cacau-800);--shadow-hard-sm:2px 2px 0 var(--cacau-800);--shadow-soft:0 8px 24px -8px rgba(59,29,14,.25);
+}
+[data-theme="noite"]{
+--surface-page:var(--cacto-900);--surface-card:#274634;--surface-raised:#2F4F3B;--surface-inverse:var(--flor-200);--surface-accent:var(--cacau-900);--surface-tint:#1A3024;
+--text-body:var(--flor-200);--text-muted:var(--cacto-300);--text-heading:var(--flor-100);--text-inverse:var(--cacau-900);--text-accent:var(--hibisco-400);--text-link:var(--ouro-300);--text-price:var(--ouro-300);
+--border-ink:var(--flor-200);--border-soft:#3E6049;--border-gold:var(--ouro-500);
+--action-primary:var(--ouro-500);--action-primary-hover:var(--ouro-300);--action-primary-text:var(--cacau-900);
+--action-secondary-text:var(--flor-200);
+--focus-ring:var(--ouro-300);
+--shadow-hard:4px 4px 0 var(--ouro-600);--shadow-hard-sm:2px 2px 0 var(--ouro-600);--shadow-soft:0 8px 24px -8px rgba(0,0,0,.5);
+}
